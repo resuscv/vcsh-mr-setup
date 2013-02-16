@@ -1,0 +1,13 @@
+[DEFAULT]
+git_gc = git gc "$@"
+jobs = 5
+
+include = cat ~/.config/mr/config.d/*
+
+#[software/git/mr]
+#checkout = git clone git://git.kitenet.net/mr
+#update = git fetch
+
+#[software/git/vcsh]
+#checkout = git clone https://github.com/RichiH/vcsh.git
+#update = git fetch
