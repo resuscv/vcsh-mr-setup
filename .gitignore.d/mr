@@ -1,0 +1,9 @@
+*
+!.config
+!.config/mr
+!.config/mr/available.d
+!.config/mr/available.d/mr.vcsh
+!.config/mr/available.d/tmux.vcsh
+!.config/mr/config.d
+!.config/mr/config.d/mr.vcsh
+!.mrconfig
