@@ -1,4 +1,6 @@
 [$HOME/.config/vcsh/repo.d/gitignore-global.git]
+# I want this processed last...so the .gitignore is updated properly
+order = 99
 checkout = vcsh clone https://github.com/resuscv/gitignore-global.git gitignore-global
 fixups =
         cd ~/.gitignore.d &&
