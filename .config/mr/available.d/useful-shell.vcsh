@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/useful-shell.git]
+checkout = vcsh clone https://github.com/resuscv/useful-shell.git useful-shell
