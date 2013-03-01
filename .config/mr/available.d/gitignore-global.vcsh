@@ -5,7 +5,7 @@ checkout = vcsh clone https://github.com/resuscv/gitignore-global.git gitignore-
 fixups =
         cd ~/.gitignore.d &&
         echo "# Global .gitignore - created from gitignore-global.base" > gitignore-global &&
-        cat `ls --ignore *.base` | grep -v '^\*$' | \
-                sed 's/^!//' | cat - gitignore-global.base | \
+        cat `ls --ignore '*.base'` | grep -v '^\*$' | \
+                sed 's/^!//' | cat - *.base | \
                 grep -v '^#' | sort -u >> gitignore-global &&
         vcsh list | sed 's=^=.gitignore.d/=' >> gitignore-global
