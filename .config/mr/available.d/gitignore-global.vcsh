@@ -1,11 +1,19 @@
+# Make a function to create the global .gitignore
+lib =
+  create_global_ignore() {
+    cd ~/.gitignore.d &&
+    echo "# Global .gitignore - created from gitignore-global.base  :  `date`" > gitignore-global &&
+    cat `ls --ignore '*.base'` | grep -v '^\*$' | \
+      sed 's/^!//' | cat - *.base | \
+      grep -v '^#' | sort -u >> gitignore-global &&
+    vcsh list | sed 's=^=.gitignore.d/=' >> gitignore-global
+  }
+
+
 [$HOME/.config/vcsh/repo.d/gitignore-global.git]
+# Run the global_ignore function at clone (checkout), pull (update) and status
+fixups = create_global_ignore
+pre_status = create_global_ignore
 # I want this processed last...so the .gitignore is updated properly
 order = 99
 checkout = vcsh clone https://github.com/resuscv/gitignore-global.git gitignore-global
-fixups =
-        cd ~/.gitignore.d &&
-        echo "# Global .gitignore - created from gitignore-global.base" > gitignore-global &&
-        cat `ls --ignore '*.base'` | grep -v '^\*$' | \
-                sed 's/^!//' | cat - *.base | \
-                grep -v '^#' | sort -u >> gitignore-global &&
-        vcsh list | sed 's=^=.gitignore.d/=' >> gitignore-global
