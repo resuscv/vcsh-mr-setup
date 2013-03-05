@@ -11,9 +11,9 @@ lib =
 
 
 [$HOME/.config/vcsh/repo.d/gitignore-global.git]
+checkout = vcsh clone https://github.com/resuscv/gitignore-global.git gitignore-global && anon_git
 # Run the global_ignore function at clone (checkout), pull (update) and status
 fixups = create_global_ignore
 pre_status = create_global_ignore
 # I want this processed last...so the .gitignore is updated properly
 order = 99
-checkout = vcsh clone https://github.com/resuscv/gitignore-global.git gitignore-global

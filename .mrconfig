@@ -1,6 +1,13 @@
 [DEFAULT]
 git_gc = git gc "$@"
 jobs = 5
+lib =
+  anon_git() {
+    # Open Source my identity.  ;-)
+    cd ${MR_REPO} &&
+    git config user.name "Olaf TNSB" &&
+    git config user.email "still.another.person@gmail.com"
+  }
 
 include = cat ~/.config/mr/config.d/*
 
