@@ -6,7 +6,7 @@ lib =
     cat `ls --ignore '*.base'` | grep -v '^\*$' | \
       sed 's/^!//' | cat - *.base | \
       grep -v '^#' | sort -u >> gitignore-global &&
-    vcsh list | sed 's=^=.gitignore.d/=' >> gitignore-global
+    vcsh list | grep -v gitignore-global | sed 's=^=.gitignore.d/=' >> gitignore-global
   }
 
 

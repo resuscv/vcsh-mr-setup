@@ -18,3 +18,11 @@ include = cat ~/.config/mr/config.d/*
 #[software/git/vcsh]
 #checkout = git clone https://github.com/RichiH/vcsh.git
 #update = git fetch
+
+[tmp]
+## This is a dummy target, all it does is run fixups at the end of
+## an update.
+checkout = mkdir -p $HOME/tmp
+update = :
+status = :
+order = 100
