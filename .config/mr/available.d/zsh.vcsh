@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/zsh.git]
+checkout = vcsh clone https://github.com/resuscv/dotfiles-zsh.git zsh && anon_git
