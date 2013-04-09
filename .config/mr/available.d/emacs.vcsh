@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/emacs.git]
+checkout = vcsh clone https://github.com/resuscv/dotfiles-emacs.git emacs && anon_git
