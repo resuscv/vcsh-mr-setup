@@ -1,2 +1,4 @@
 [$HOME/.config/vcsh/repo.d/mr.git]
 checkout = vcsh clone https://github.com/resuscv/vcsh-mr-setup.git mr && anon_git
+order = 1
+
