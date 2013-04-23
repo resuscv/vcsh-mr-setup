@@ -1,11 +1,15 @@
 *
+!.config/mr/available.d/emacs.vcsh
 !.config/mr/available.d/gitignore-global.vcsh
 !.config/mr/available.d/mr.vcsh
 !.config/mr/available.d/tmux.vcsh
 !.config/mr/available.d/useful-shell.vcsh
+!.config/mr/available.d/zsh.vcsh
+!.config/mr/config.d/0-gitignore-global.vcsh
 !.config/mr/config.d/gitignore-global.vcsh
 !.config/mr/config.d/mr.vcsh
 !.config/mr/config.d/tmux.vcsh
 !.config/mr/config.d/useful-shell.vcsh
+!.config/mr/config.d/zsh.vcsh
 !.gitignore.d/mr
 !.mrconfig

@@ -1,2 +1,10 @@
 [$HOME/.config/vcsh/repo.d/emacs.git]
 checkout = vcsh clone https://github.com/resuscv/dotfiles-emacs.git emacs && anon_git
+
+[Documents/org/MobileOrg]
+## Dummy target to make a folder for my mobile orgmode documents
+checkout = mkdir -p $HOME/Documents/org/MobileOrg
+update = :
+status = :
+order = 100
+
