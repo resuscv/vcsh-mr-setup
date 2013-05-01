@@ -1,6 +1,10 @@
 [$HOME/.config/vcsh/repo.d/emacs.git]
 checkout = vcsh clone https://github.com/resuscv/dotfiles-emacs.git emacs && anon_git
 
+[software/git/org-mode]
+checkout = git clone git://orgmode.org/org-mode.git
+fixups = cd ${MR_REPO} && make autoloads 2> /dev/null
+
 [Documents/org/MobileOrg]
 ## Dummy target to make a folder for my mobile orgmode documents
 checkout = mkdir -p $HOME/Documents/org/MobileOrg
