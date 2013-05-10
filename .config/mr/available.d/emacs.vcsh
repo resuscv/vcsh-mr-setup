@@ -3,7 +3,7 @@ checkout = vcsh clone https://github.com/resuscv/dotfiles-emacs.git emacs && ano
 
 [software/git/org-mode]
 checkout = git clone git://orgmode.org/org-mode.git
-fixups = cd ${MR_REPO} && make autoloads 2> /dev/null
+fixups = cd ${MR_REPO} && make autoloads 2> /dev/null && make doc 2> /dev/null
 
 [Documents/org/MobileOrg]
 ## Dummy target to make a folder for my mobile orgmode documents
