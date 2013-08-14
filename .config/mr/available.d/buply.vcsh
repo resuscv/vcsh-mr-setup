@@ -1,0 +1,3 @@
+[software/git/buply]
+checkout = git clone https://github.com/resuscv/buply.git && anon_git
+  cd ~/bin && ln -s ${MR_REPO}/buply buply && ln -s ${MR_REPO}/buply-demo
