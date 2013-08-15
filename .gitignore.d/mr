@@ -1,6 +1,7 @@
 *
 !.config/mr/available.d/buply.vcsh
 !.config/mr/available.d/emacs.vcsh
+!.config/mr/available.d/emacs-ess.vcsh
 !.config/mr/available.d/gitignore-global.vcsh
 !.config/mr/available.d/mr.vcsh
 !.config/mr/available.d/tmux.vcsh

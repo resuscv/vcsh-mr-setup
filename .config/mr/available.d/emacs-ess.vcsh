@@ -1,0 +1,3 @@
+[software/git/ESS]
+checkout = git clone https://github.com/emacs-ess/ESS.git
+fixups = cd ${MR_REPO} && make 2> /dev/null
