@@ -4,6 +4,7 @@
 !.config/mr/available.d/emacs-ess.vcsh
 !.config/mr/available.d/gitignore-global.vcsh
 !.config/mr/available.d/mr.vcsh
+!.config/mr/available.d/rprofile.vcsh
 !.config/mr/available.d/tmux.vcsh
 !.config/mr/available.d/useful-shell.vcsh
 !.config/mr/available.d/zsh.vcsh
