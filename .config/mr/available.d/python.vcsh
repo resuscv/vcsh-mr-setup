@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/python.git]
+checkout = vcsh clone https://github.com/resuscv/dotfiles-python.git python && anon_git
